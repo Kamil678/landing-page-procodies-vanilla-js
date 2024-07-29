@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Landing page procodies Vanilla JS</title>
+  </head>
+  <body>
+    <header>
+      <div class="carousel-container">
+        <figure class="main-image">
+          <img
+            id="main-image"
+            src="assets/image1.png"
+            alt="Image 1"
+            data-id="1"
+          />
+        </figure>
+        <div class="other-images">
+          <button aria-label="Change image to Image 2" data-id="2">
+            <img src="assets/image2.png" alt="Image 2" />
+          </button>
+          <button aria-label="Change image to Image 3" data-id="3">
+            <img src="assets/image3.png" alt="Image 3" />
+          </button>
+          <button aria-label="Change image to Image 4" data-id="4">
+            <img src="assets/image4.png" alt="Image 4" />
+          </button>
+        </div>
+        <div class="value-container">
+          <p class="current-value">$1.99</p>
+          <p class="original-value">Original value $500</p>
+        </div>
+      </div>
+      <div class="header-content">
+        <h1>Chance to win a StockX Mystery Box today!</h1>
+        <p>Unleash the Excitement of Mystery Electronics</p>
+        <div class="form-container">
+          <h3>Enter details</h3>
+          <form>
+            <div class="name-container">
+              <input
+                type="text"
+                name="firstName"
+                placeholder="First name"
+                aria-label="First name"
+              />
+              <input
+                type="text"
+                name="lastName"
+                placeholder="Last name"
+                aria-label="Last name"
+              />
+            </div>
+            <input
+              type="text"
+              name="street"
+              placeholder="Street"
+              aria-label="Street"
+            />
+            <div class="adress-container">
+              <input
+                type="text"
+                name="postalCode"
+                placeholder="Postal code"
+                aria-label="Postal code"
+                pattern="[0-9]{2}-[0-9]{3}"
+              />
+              <input
+                type="text"
+                name="city"
+                placeholder="City"
+                aria-label="City"
+              />
+            </div>
+            <input
+              type="tel"
+              name="phoneNumber"
+              placeholder="Phone number"
+              aria-label="Phone number"
+              pattern="\+?[0-9\s\-\(\)]{7,}"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="E-mail"
+              aria-label="E-mail"
+            />
+            <button type="button">Proceed to payment</button>
+          </form>
+          <div class="form-footer">
+            <img
+              src="assets/mc-affe-secure.png"
+              alt="McAffe Secure"
+              width="93"
+              height="40"
+            />
+            <img
+              src="assets/truste-verified.png"
+              alt="Truste verified"
+              width="93"
+              height="40"
+            />
+            <img
+              src="assets/ssl.png"
+              alt="SSL 256 BIT"
+              width="93"
+              height="40"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h2>Top Tech Mystery Box at Unbeatable Prices</h2>
+      <p class="info">
+        Fast shipping | Easy returns | Special discounts for students
+      </p>
+      <section class="box-with-image-container first-section">
+        <div class="image-container">
+          <img
+            src="assets/box-with-image-1.png"
+            alt="First product photo"
+            width="583"
+            height="583"
+          />
+        </div>
+        <div class="text-container">
+          <h3>Curious about the <span>StockX</span> Mystery Box?</h3>
+          <p class="first-text">
+            Experience the thrill of unboxing cutting-edge gadgets with Stockx
+            Mystery Boxes. Each box is a treasure trove of high-quality
+            electronics, handpicked to elevate your tech game.
+          </p>
+          <p class="second-text">
+            Expect the unexpected! Our boxes are packed with the latest gadgets,
+            from smartphones to gaming consoles, ensuring you get the best tech
+            surprises every time.
+          </p>
+        </div>
+      </section>
+      <section class="box-with-image-container image-right">
+        <div class="image-container">
+          <img
+            src="assets/box-with-image-2.png"
+            alt="Second product photo"
+            width="583"
+            height="583"
+          />
+        </div>
+        <div class="text-container">
+          <h3>Why is everyone buzzing about these boxes?</h3>
+          <p class="first-text">
+            StockX Mystery Boxes are not just about products; they’re about the
+            experience. Imagine the excitement of unveiling top-tier electronics
+            at a fraction of the cost.
+          </p>
+          <p class="second-text">
+            Our boxes include a variety of premium tech items, making it a
+            must-have for every tech enthusiast. Join the buzz and see why
+            everyone is raving about the unbeatable value and surprise factor of
+            Stockx Mystery Boxes!
+          </p>
+        </div>
+      </section>
+      <section class="finish-info-container">
+        <div class="finish-info-item">
+          <p class="finish-info-title">How can I win?</p>
+          <p class="finish-info-text">
+            Thanks to your membership, you also participate in our contest to
+            win the iPhone15. We select a winner among every 600 participants.
+            The next winner will be selected on 06.10.2023, and will be notified
+            directly by e-mail. If the reward is out of stock, the winner will
+            receive a similar product of equal or greater value instead.
+          </p>
+        </div>
+        <div class="finish-info-item">
+          <p class="finish-info-title">No hidden fees?</p>
+          <p class="finish-info-text">
+            We ensure that our members are provided with a detailed history of
+            transactions so that they know exactly what they are paying for.
+            Credit card information is only required to facilitate future
+            purchases. There will be no charges on your credit card statement if
+            you do not upgrade to PREMIUM membership and do not make a purchase.
+          </p>
+        </div>
+        <div class="finish-info-item">
+          <p class="finish-info-title">
+            Why do we need your billing information?
+          </p>
+          <p class="finish-info-text">
+            By joining this service, you will receive a 5-day trial of our
+            partner's program. If you continue with a subscription beyond the
+            5-day trial period, you will be charged an amount on your credit
+            card which varies depending on the choice of the tariff. When your
+            contribution is deducted from your credit card or other payment
+            method, you will have access to these services which are reserved
+            exclusively for members of our partner's website.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p class="accept-credit-cards-text">
+        We accept the following credit cards
+      </p>
+      <div class="credit-cards-container">
+        <img src="assets/accept-credit-cards.png" alt="Accept credit cards" />
+      </div>
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>
