@@ -80,6 +80,8 @@ header {
 .other-images img {
   width: 100px;
   height: 100px;
+  border: 0.93px solid var(--color-secondary);
+  border-radius: 15px;
 }
 
 .value-container {
