@@ -238,6 +238,10 @@ main .info {
   max-width: 600px;
 }
 
+.finish-info-item p {
+  line-height: 16px;
+}
+
 .finish-info-item .finish-info-title {
   font-size: 12px;
   font-weight: 600;
@@ -265,6 +269,7 @@ footer img {
 }
 
 .credit-cards-container {
+  height: auto;
   text-align: center;
 }
 
@@ -362,6 +367,10 @@ footer img {
 
   footer img {
     width: auto;
+    height: 40px;
+  }
+
+  .credit-cards-container {
     height: 40px;
   }
 }
