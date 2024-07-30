@@ -136,7 +136,7 @@ header {
 }
 
 .form-container .name-container,
-.form-container .address-container {
+.form-container .adress-container {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -327,7 +327,7 @@ footer img {
   }
 
   .form-container .name-container,
-  .form-container .address-container {
+  .form-container .adress-container {
     flex-direction: row;
   }
 
